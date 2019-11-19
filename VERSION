@@ -1,0 +1,85 @@
+commit 3fb2fc30cc80ce66032c6b8da91abc10736b444f
+Author: Emmett Lalish <elalish@google.com>
+Date:   Mon Nov 18 16:18:37 2019 -0800
+
+    Rendering refactor for anti-aliasing (#880)
+    
+    * removed normalmap blur
+    
+    * added roughnessmipmapper
+    
+    * need to change strategies
+    
+    * roughness shader runs
+    
+    * changing roughness mips, but not saving the texture properly
+    
+    * texture saving working, but seems to have a race condition
+    
+    * commented out debugging
+    
+    * roughness mipmapper sort of working but may have a race
+    
+    * working better now; equation needs work
+    
+    * mipmapping and saving work, equation should be tweaked
+    
+    * merging master
+    
+    * roughness mipmapper working
+    
+    * cleanup
+    
+    * added vertex normal antialiasing
+    
+    * fixed skybox
+    
+    * disaligned blur axes to remove pole artifact
+    
+    * added uniform mip level
+    
+    * moved geometry antialiasing up to affect main roughness value
+    
+    * using two roughness values
+    
+    * moved debugging function
+    
+    * fixed black PMREM corner pixels
+    
+    * added directional light fidelity test
+    
+    * remapped roughness
+    
+    * best yet
+    
+    * first cleanup
+    
+    * second cleanup
+    
+    * more cleanup
+    
+    * fixed unlit model bug
+    
+    * reverting index
+    
+    * bumped threejs version
+    
+    * cleanup
+    
+    * cleaning spaces
+    
+    * added docs, shader improvement
+    
+    * updated goldens
+    
+    * slight update of PMREM parameters to match analysis
+    
+    * updated goldens
+    
+    * addressing feedback
+    
+    * renderer -> threeRenderer
+    
+    * moved debug to utilities
+    
+    * added comma
